@@ -1,0 +1,112 @@
+\documentclass[presentation,xcolor=svgnames,9pt]{beamer}
+
+\usepackage{ngerman}
+\usepackage{amsthm}
+\usepackage{lipsum}
+\usepackage{capt-of}
+\usepackage[noend]{algpseudocode}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{rotating}
+\usepackage[dvips]{epsfig}
+\usepackage{graphicx}
+\usepackage[outdir=./]{epstopdf}
+\usepackage{acronym}
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning}
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{fit,backgrounds}
+\usetikzlibrary{calc}
+\usepackage{algorithm}
+\usepackage{multirow}
+\usepackage{algorithmicx}
+\usepackage{tikz}
+% \usepackage{enumitem}
+\usepackage{selinput}
+\usepackage{ulem}
+
+\setbeamercovered{transparent}
+\tikzset{cross/.style={cross out, draw=black, minimum
+size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
+\usetikzlibrary{arrows,shapes,snakes,automata,backgrounds,petri}
+%Leftrightarrow \setbeamercovered{again covered={\opaqueness<1->{15}}}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
+
+\newcommand{\mytab}[1]{%
+	\begin{tabular}{@{}c@{}}
+		#1
+	\end{tabular}
+}
+
+\pgfdeclarelayer{bg}    % declare background layer
+\pgfsetlayers{bg,main}  % set the order of the layers (main is the standard layer)
+
+\mode<presentation>
+{
+	\usetheme{Malmoe}
+
+	\usecolortheme{crane}
+	\useinnertheme{circles}
+
+	% Disable navigation bar
+	\setbeamertemplate{navigation symbols}{}
+}
+
+
+\selectlanguage{ngerman}
+
+\title[Seminar: Software Engineering]{Codeanalyse und Architekturanalyse}
+\author[Klaus-J. Ziegert]{Klaus-J. Ziegert}
+
+\institute[]{Universität Hamburg\\
+	Fakultät für Mathematik, Informatik und Naturwissenschaften\\
+	Fachbereich Informatik}
+
+\date{\today}
+
+\logo{\includegraphics[height=0.5cm]{images/uhh_logo.png}}
+\useoutertheme{infolines}
+
+\AtBeginSection[]
+  {
+     \begin{frame}<beamer>
+     \frametitle{Plan}
+     \tableofcontents[currentsection]
+     \end{frame}
+  }
+
+\begin{document}
+
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+        \section{Metrik}
+        \subsection{Motiviation}
+        \subsection{Defintion}
+        \subsection{Level von Metriken}
+        \subsection{C und K-Metrik}
+        \subsection{Robert C. Martin Metriken}
+
+        \section{Tools}
+        \subsection{JDepend}
+        \subsection{Jarchitect}
+
+
+
+\end{document}
+
