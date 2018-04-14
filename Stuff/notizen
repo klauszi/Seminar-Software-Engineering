@@ -1,0 +1,36 @@
+Tools:
+
+        Sourcemeter 
+                -- Verfügbar: https://www.sourcemeter.com/
+                -- nur Testversion ist kostenlos
+                -- analysiert Source Code statisch
+
+        Code Maat
+                -- Verfügbar: https://github.com/adamtornhill/code-maat
+                -- Vollversion
+                -- erzeugt und analysiert Daten vom
+                   Versionskontrollsystem (nur command line
+                   möglich)
+                -- weitere Details unter https://codescene.io
+                -- basiert auf Buch "Your Code as a Crime Scene"
+                -- basiert auf Buch "Software Design X-Rays" 
+
+        Jarchitect
+                -- Verfügbar: https://www.jarchitect.com/
+                -- nur Testversion ist kostenlos
+                -- untersucht Source Code, ausschließlich für Java
+
+        MetricsReloaded
+                -- Verfügbar: https://github.com/BasLeijdekkers/MetricsReloaded
+                -- Automated code metrics plugin for IntelliJ
+                   IDEA(-> ist eine bescheuerte IDE)
+                -- ist auch unter command line verwendbar
+        STAN
+                -- Verfügbar: http://stan4j.com
+                -- Strukturanalyse-Programm (umfasst weniger
+                   Metriken)
+                -- ist nur für Java!
+                -- Eclipse Plugin
+
+Literatur:
+        
