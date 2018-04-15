@@ -1,0 +1,50 @@
+\documentclass[runningheads]{llncs}
+
+%---- Sonderzeichen-------%
+\usepackage {ngerman}
+%---- Codierung----%
+\usepackage[latin1]{inputenc}	% for Unix and Windows
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{llncsdoc}
+%----- Mathematischer Zeichenvorrat---%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+% fuer die aktuelle Zeit
+\usepackage{scrtime}
+\usepackage{listings}
+\usepackage{subfigure}
+\usepackage{hyperref}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+
+
+\begin{document}
+
+\mainmatter
+\title{Titel der Seminararbeit}
+\titlerunning{Titel der Seminararbeit}
+\author{Name des Autors}
+\authorrunning{Titel des Seminars}
+\institute{Betreuer: Betreuername}
+\date{23.07.2007}
+\maketitle
+
+\begin{abstract} An dieser Stelle sollte später eine Kurzzusammenfassung stehen.
+        \cite{Lan07}
+\end{abstract}
+
+\section{Kapitel}
+\subsection{Unterkapitel}
+% Normaler LNCS Zitierstil
+%\bibliographystyle{splncs}
+\bibliographystyle{itmalpha}
+% TODO: Ändern der folgenden Zeile, damit die .bib-Datei gefunden wird
+\bibliography{../Literatur/lit}
+
+\end{document}
+
